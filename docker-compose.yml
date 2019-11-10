@@ -39,12 +39,12 @@ services:
       KAFKA_CREATE_TOPICS: "DATA:1:1"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-  log:
-    image: logentries/docker-logentries
-    command: '-t XXXXXX-XXXXX-XXXXX-XXXXX'
-    restart: always
-    volumes:
-      - '/var/run/docker.sock:/var/run/docker.sock'
+  # logentries:
+  #   command: '-t 82855f8b-5341-34d5-3e54-12b612c26efa --no-stats'
+  #   image: logentries/docker-logentries
+  #   restart: always
+  #   volumes:
+  #     - '/var/run/docker.sock:/var/run/docker.sock'
 
 volumes:
   mongo-data:
