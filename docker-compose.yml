@@ -7,7 +7,7 @@ services:
     expose:
       - "27017"
   app:
-    image: message-app:v0.1
+    image: message-app:v0.2
     ports:
       - "8000:80"
     links:
@@ -16,7 +16,15 @@ services:
       - mongo
     environment:
       - MONGO_URL=mongodb://mongo/messageApp
+      - REDIS_URL=redis
+  kv:
+    image: redis:alpine
+    volumes:
+      - redis-data:/data
+    expose:
+      - "6379"
 
 volumes:
   mongo-data:
+  redis-data:
   
