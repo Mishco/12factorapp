@@ -1,1 +1,3 @@
-"# 12factorapp" 
+# 12factorapp
+
+Application for implementing 12 factors
