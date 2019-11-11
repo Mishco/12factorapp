@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HtmlController {
+
     @Value("${welcome.message}")
     private String message;
 
