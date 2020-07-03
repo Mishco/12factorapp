@@ -1,5 +1,7 @@
 # 12 Factors app
 
+## Moved to https://gitlab.com/Mishco/12factorapp
+
 Application for implementing 12 factors
 
 ## Technology stack
